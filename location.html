@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+<link rel="stylesheet" href="./icons/all.min.css">
+<link rel="stylesheet" href="./icons/fontawesome.min.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .main{
+            padding: 10px;
+            background-color: rgb(249, 240, 240);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .menu{
+            padding: 20px;
+        }
+        .menu a{
+            text-decoration: none;
+            /* display: inline; */
+            color: rgb(106, 101, 101);
+            padding: 0px 10px;
+        }
+        .menu .home{
+            color: rgb(201, 38, 66);
+        }
+        .blog{
+            text-align: center;
+            color: white;
+            padding: 10px 0px;
+            background-color: rgb(182, 226, 38);
+            font-family: arial;
+        }
+        .image img{
+            width: 100%;
+        }
+        .link{
+            width: 60%;
+            opacity: 79%;
+            margin: auto;
+            background-color: white;
+            padding: 20px 10px;
+            position: absolute;
+            top: 28%;
+            left: 25%;
+        }
+        .link img{
+            float: left;
+            margin: 0px 20px;
+        }
+        .new{
+            color: rgb(236, 6, 52);
+            margin-top: 10px;
+        }
+        .link p{
+            margin-top: 5px;
+            margin-right:100px;
+        }
+        .table{
+            width: 90%;
+            margin: 2% 12%;
+            display: grid;
+            grid-template-columns: 52% 28%;
+            grid-column-gap: 35px;
+            padding-left: 10px;
+           
+        }
+        .form{
+            margin: 20px;
+            padding: 10px;
+        }
+        .form h2{
+            margin: 10px;
+        }
+        .table .form input[type=text]{
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+        }
+        .table .form textarea{
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+        .table .form input[type=Submit]{
+            padding: 10px 30px;
+            margin: 10px;
+        }
+        .pic{
+            height: 200px;
+            text-align: center;
+            background-color: rgb(234, 219, 219);
+            margin-top: 30px;
+            padding: 20px;
+        }
+        .pic p{
+            padding-top: 20px;
+            line-height: 30px;
+        }
+        .main4{
+        background-color: crimson;
+        color: white;
+        /* height: 100px; */
+        text-align: center;
+        /* line-height: 100px; */
+        padding-top: 40px;
+       }
+       .fa-brands{
+        padding: 5px;
+        margin: 5px;
+        font-size: larger;
+        border: solid 3px white;
+        border-radius: 5px;
+        background-color: white;
+        color: crimson;
+       }
+       .main4 p{
+        padding-top: 10px;
+        color: white;
+       }
+       .fa-copyright{
+        color: white;
+        background-color: crimson;
+        font-size: small;
+        padding-right: 2px;
+       }
+      
+       @media(max-width:1328px){
+        .link{
+            top: 15%;
+        }
+        .link p{
+            text-align: center;
+        }
+        .main4{
+            padding: 20px;
+        }
+       }
+       @media(max-width:1168px){
+        .link{
+            width:70%;
+            top:  15%;
+        }
+        .image img{
+            height: 250px;
+        }
+       }
+       @media(max-width:810px){
+        .link .new{
+            font-size: 20px;
+        }
+        .table{
+            width: 100%;
+            margin: 2% 5%;
+        }
+        .pic{
+            height: 350px;
+        }
+       }
+       @media(max-width:1100px){
+        .pic{
+            height: 400px;
+        }
+       }
+       @media(max-width:578px){
+        .link{
+            width: 80%;
+        }
+        .pic{
+            height: 400px;
+        }
+        }
+       @media(max-width:508px){
+        .link{
+            width: 70%;
+            padding: 0px 10px;
+            top: 19%;
+            right: 3%;
+            float: none;
+            
+        }
+        .link img{
+            margin: 10px 90px;
+            float: none;
+        }
+        .image img{
+            height: 300px;
+        }
+        .pic{
+            height: 600px;
+        }
+       }
+       @media(max-width:412px){
+        .image img{
+            height: 350px;
+        }
+        .link{
+            font-size: 15px;
+            padding: 3px;
+            margin-top: 50px;
+        }
+        .table{
+            grid-template-columns: 1fr;
+            margin: 3% 0%;
+        }
+        .pic{
+            height: 200px;
+            margin: 10px;
+        }
+       }
+       @media(max-width:372px){
+        .main{
+            display: block;
+            text-align: center;
+        }
+        .menu a{
+            display: block;
+            padding: 10px;
+        }
+        .link{
+            margin-top: 160px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+         
+          <img src="./images/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <a href="index.html">HOME</a>
+             <a href="about.html">ABOUT</a>
+              <a href="blog.html" >BLOG</a>
+               <a href="" class="home">CONTACT</a>
+        </div>
+    </div>
+    <section>
+        <div class="blog"><h1>CONTACT</h1></div>
+    </section>
+    <div class="image">
+        <img src="./images/map.jpg" alt="">
+    </div>
+    <div class="link">
+        <img src="./images/check-in.png" alt="">
+        <h1 class="new">UNIT 0123,ABC BUILDING,BUSSINESS PARK</h1>
+        <p>If you're having problems editing this website template,then don't hesitate to ask for help on the Forums</p>
+    </div>
+    <div class="table">
+        <div class="form">
+         <h2 class="new">INQUIRY FORM</h2>
+         <form action="">
+            <label for=""></label><br>
+            <input type="text" placeholder="Name" ><br>
+            <label for=""></label><br>
+            <input type="text" placeholder="Email"><br>
+            <label for=""></label><br>
+            <input type="text" placeholder="Subject"><br>
+            <label for=""></label><br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Share Your Thoughts"></textarea><br>
+            <input type="Submit" value="SEND">
+         </form>
+        </div>
+        <div class="pic">
+          <h2 class="new">WE'D LOVE TO HEAR FROM YOU.</h2>
+          <p>If you're having problems editing this website template,then don't hesitate to ask for help on the Forums.</p>
+        </div>
+    </div>
+    <div class="main4">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google"></i>
+        <p><i class="fa-regular fa-copyright"></i>2023 Freeeze.All Reserved Right</p>
+    
+    </div>
+</body>
+</html>

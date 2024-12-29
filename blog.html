@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./icons/all.min.css">
+    <link rel="stylesheet" href="./icons/fontawesome.min.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .main {
+            padding: 10px;
+            /* height: 50px; */
+            /* line-height: 50px; */
+            background-color: rgb(249, 240, 240);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+
+        .menu {
+            padding: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            /* display: inline; */
+            color: rgb(106, 101, 101);
+            padding: 0px 10px;
+
+        }
+
+        .menu .home {
+            color: rgb(201, 38, 66);
+        }
+
+        .blog {
+            text-align: center;
+            color: white;
+            background-color: rgb(182, 226, 38);
+
+            padding: 10px 0px;
+        }
+
+        .main4 {
+            background-color: crimson;
+            color: white;
+            /* height: 100px; */
+            text-align: center;
+            /* line-height: 100px; */
+            padding: 40px 0px;
+        }
+
+        .fa-brands {
+            padding: 5px;
+            margin: 5px;
+            font-size: larger;
+            border: solid 3px white;
+            border-radius: 5px;
+            background-color: white;
+            color: crimson;
+        }
+
+        .main4 p {
+            padding-top: 20px;
+            color: white;
+        }
+
+        .fa-copyright {
+            color: white;
+            background-color: crimson;
+            font-size: small;
+            padding-right: 2px;
+        }
+
+        .section {
+
+            display: grid;
+            width: 70%;
+            grid-template-columns: 2fr 1fr;
+            grid-column-gap: 20px;
+            margin: auto;
+            margin-top: 25px;
+            /* background-color: aqua; */
+        }
+
+        .pic {
+            color: rgb(132, 127, 127);
+            display: grid;
+            grid-template-columns: 1fr;
+
+        }
+
+        .photo {
+            padding: 10px 0px;
+        }
+
+        .photo img {
+            margin-bottom: 10px;
+            margin-right: 15px;
+            padding: 5px;
+            font-size: small;
+            float: left;
+        }
+
+
+        .new {
+            color: crimson;
+            font-family: arial;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .admin {
+            font-size: x-small;
+            margin: 15px 0px;
+        }
+
+        button {
+            background-color: white;
+            padding: 10px 30px;
+            border: solid 3px darkgray;
+            margin: 10px 0px;
+            margin-bottom: 30px;
+            border-radius: 3px;
+        }
+
+        .recent {
+            /* margin-top: 25px; */
+            font-size: small;
+            text-align: center;
+            padding: 10px 20px;
+            color: rgb(104, 99, 99);
+            background-color: rgb(234, 219, 219);
+        }
+
+        .recent button {
+            background-color: rgb(234, 219, 219);
+        }
+
+        .now {
+            color: crimson;
+            font-weight: lighter;
+            font-family: arial;
+            padding: 10px 0px;
+        }
+
+        .btn {
+            position: relative;
+            left: 40%;
+        }
+
+        @media(max-width:870px) {
+            .section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media(max-width:764px) {
+            .photo img {
+                float: none;
+            }
+
+            .photo {
+                text-align: center;
+            }
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header class="main">
+
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="" class="home">BLOG</a>
+            <a href="location.html">CONTACT</a>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="blog">
+            <h1>BLOG</h1>
+        </div>
+    </section>
+    <section>
+        <div class="section">
+            <div class="pic">
+                <div class="photo">
+                    <img src="./images/new-chills.png" alt="">
+                    <h1 class="new">NEW CHILLS FOR SUMMER</h1>
+                    <p class="admin">By Admin on November 28,2023</p>
+                    <p>You can replace all this text with your own text.You can remove any link too our website from
+                        this website template,you're free to use this website template withot linking back to us.If
+                        you're having problems editing this website template.</p>
+                    <br>
+
+                    <button>READ MORE</button>
+                    <br>
+
+                    <hr>
+                </div>
+                <div class="photo">
+                    <img src="./images/berries.png" alt="">
+                    <h1 class="new">BERRIES ON THE GROOVE</h1>
+                    <p class="admin">By Admin on November 28,2023</p>
+                    <p>You can replace all this text with your own text.You can remove any link too our website from
+                        this website template,you're free to use this website template withot linking back to us.If
+                        you're having problems editing this website template.</p>
+                    <br>
+
+                    <button>READ MORE</button>
+                    <br>
+
+                    <hr>
+                </div>
+            </div>
+            <!-- <div class="desc"> </div> -->
+            <div class="recent">
+                <h1 class="new">Recent Posts</h1>
+                <img src="./images/on-diet.png" alt="">
+                <h1 class="now">ON THE DIET</h1>
+                <p class="admin">By Admin on November 28,2023</p>
+                <p>You can replace all this text with your own text.You can remove any link too our website from this
+                    website template,you're free to use this website template withot linking back to us.If you're having
+                    problems editing this website template.</p>
+                <br>
+                <!-- <br> -->
+                <button>READ MORE</button>
+                <br>
+            </div>
+
+        </div>
+    </section>
+    <div class="btn">
+        <!-- <hr> -->
+        <br>
+        <p><button>LOAD MORE</button></p>
+    </div>
+    <div class="main4">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google"></i>
+        <p><i class="fa-regular fa-copyright"></i>2023 Freeeze.All Reserved Right</p>
+
+    </div>
+</body>
+
+</html>

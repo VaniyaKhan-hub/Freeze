@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="./icons/all.min.css">
+    <link rel="stylesheet" href="./icons/fontawesome.min.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .main{
+            padding: 10px;
+            /* height: 50px; */
+            /* line-height: 50px; */
+            background-color: rgb(249, 240, 240);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .menu{
+            padding: 20px;
+        }
+        .menu a{
+            text-decoration: none;
+            display: inline;
+            color: rgb(106, 101, 101);
+            padding: 0px 10px;
+        }
+        .menu .home{
+            color: rgb(201, 38, 66);
+        }
+        .hero h3{
+            height: 50px;
+            font-weight: bold;
+            color: white;
+            background-color:  rgb(201, 225, 24);
+            text-align: center;
+            line-height: 40px;
+        }
+        .image img{
+            width: 100%;
+            height: 180px;
+        }
+        .container{
+            width: 900px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns:  300px 600px;
+            height: 500px;
+        }
+        .desc{
+             margin-right: 10px;
+             background-color: rgb(222, 213, 213);
+             padding: 10px;
+             text-align: center;
+             
+        }
+        .desc p{
+            padding: 8px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .part{
+            color: crimson;
+            padding: 10px;
+
+        }
+        .post{
+            
+            padding-top: 0px;
+            
+        }
+        .post p{
+            padding: 14px;
+            font-family: arial;
+            color: rgb(112, 108, 108);
+        }
+        .post .we{
+            color: crimson;
+            font-family: arial;
+            padding-left: 10px;
+        }
+        .post .frozen{
+            text-decoration: underline;
+        }
+        .post .off{
+            padding-top: 0px;
+        }
+        .main4{
+        background-color: crimson;
+        color: white;
+        height: 100px;
+        text-align: center;
+        
+        padding-top: 85px;
+       }
+       .fa-brands{
+        padding: 5px;
+        margin: 5px;
+        font-size: larger;
+        border: solid 3px white;
+        border-radius: 5px;
+        background-color: white;
+        color: crimson;
+       }
+       .main4 p{
+        padding-top: 20px;
+        color: white;
+       }
+       .fa-copyright{
+        color: white;
+        background-color: crimson;
+        font-size: small;
+        padding-right: 2px;
+       }
+       @media(max-width:920px){
+        .container{
+            width: 800px;
+            display: grid;
+            grid-template-columns:  300px 500px;
+            height: 600px;
+        }
+
+       }
+       @media(max-width:810px){
+        .container{
+            width: 700px;
+            display: grid;
+            grid-template-columns: 250px 450px;
+            height: 600px;
+        }
+
+       }
+       @media(max-width:690px){
+        .container{
+            width: 650px;
+            display: grid;
+            grid-template-columns:  240px 360px;
+            height: 700px;
+        }
+       }
+       @media(max-width:580px){
+        .container{
+            width: 600px;
+            display: grid;
+            grid-template-columns:  220px 370px;
+            height: 530px;
+            font-size: 13px;
+        }
+        .desc{
+            font-size: small;
+        }
+       }
+       @media(max-width:540px){
+        .main{
+            display: grid;
+            grid-template-columns: 1fr;
+            /* height: 80px; */
+            text-align: center;
+        }
+        .container{
+            width: 500px;
+            display: grid;
+            grid-template-columns: 170px 330px;
+            height: 570px;
+        }
+        .desc p{
+            font-size: 12px;
+            line-height: 40px;
+        }
+       }
+       @media(max-width:490px){
+        .container{
+            width: 450px;
+            display: grid;
+            grid-template-columns:  155px 295px;
+            height: 620px;
+            font-size: 13px;
+        }
+        .desc{
+            margin-right: 5px;
+        }
+        .desc p{
+            font-size: small;
+            line-height: 30px;
+        }
+    }
+    @media(max-width:420px){
+        .container{
+            width: 420px;
+            display: grid;
+            grid-template-columns:1fr;
+            height: 720px;
+            
+        }
+        .desc{
+            margin: 10px 5px;
+        }
+        .desc p{
+            font-size: medium;
+            line-height: 30px;
+        }
+        .post{
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .image img{
+            height: 220px;
+        }
+    }
+    @media(max-width:396px){
+        .main .menu a{
+            display: block;
+            padding: 10px;
+        }
+        .container{
+            width: 350px;
+            display: grid;
+            grid-template-columns:1fr;
+            height: 870px;
+        }
+    }
+        </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+           
+          <img src="./images/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <a href="index.html" >HOME</a>
+             <a href="" class="home">ABOUT</a>
+              <a href="blog.html">BLOG</a>
+               <a href="">CONTACT</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h3>ABOUT</h3>
+    </div>
+    <div class="image">
+        <img src="./images/bg-header-about.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="desc">
+         <h2 class="part">BE PART OF OUR COMMUNITY</h2>
+         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur enim cupiditate perferendis delectus dolore fugiat vero totam libero! Mollitia cupiditate alias eveniet saepe voluptate obcaecati eaque ipsam quos. Quae, consequatur.
+
+         </P>
+        </div>
+        <div class="post">
+         <h2 class="we">WE HAVE FREE TEMPLATES FOR EVERYONE</h2>
+         <p>Our website templates are created with inspiration,checked for quality and originality and meticulously sliced and coded.What's more,they are absolutely free!.You can do alot with them.You can modify them.</p>
+         <p>You can use them to design websites for clients,so long as you agree with the <a href="" class="frozen">Terms of Use.</a>You can even remove all our links if you want to.</p>
+         <h2 class="we">WE HAVE MORE TEMPLATES FOR YOU</h2>
+         <p>Looking for more templates?Just browse through all our <a href="" class="frozen">Free Website Templates. </a>But if you can't find any website templates you can use,try our <a href="" class="frozen">Free Web Design</a>services and tell us about it.We love a good challenge!</p>
+         <h2 class="we">TEMPLATE DETAILS</h2>
+         <p class="off">Design Version 2</p>
+         <p class="off">Code Version 1</p>
+         <p class="off">Website Template details,discussion and updates for this <a href="" class="frozen">Frozen Yogurt Shop Website Template</a></p>
+         
+         <p>Website Template design by <a href=""   class="frozen">Free Website Templates</a></p>
+        </div>
+    </div>
+    <div class="main4">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google"></i>
+        <p><i class="fa-regular fa-copyright"></i>2023 Freeeze.All Reserved Right</p>
+    
+    </div>
+</body>
+</html>
